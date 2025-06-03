@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function cambiarContenido() {
+        let div = document.getElementById('miDiv');
+        textito = "https://cdn.pixabay.com/photo/2023/11/27/15/41/cat-8415620_640.jpg"
+        div.innerHTML = '<img src='+textito+'>';
+    }
+    </script>
+
 </head>
 <body>
-    Mi Portafolio
-    Mis Proyectos
+    <header>
+        <a href="https://portal.inacap.cl/">opcion 1</a>
+        <a href="#hobbies">HOBBIES</a>
+        <a href="#proyectos">PROYECTOS</a> 
+    </header>
+    <section id="portafolio">
+        Mi Portafolio
+        <div id="miDiv">Contenido original
+            <img src="https://cdn.pixabay.com/photo/2024/10/31/14/22/moon-9164274_640.png">
+        </div>
+        <button onclick="cambiarContenido()">Cambiar Contenido</button>
+
+        <div class="texto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quaerat ratione facere repellendus quo, iure qui perspiciatis sit atque animi odit consequuntur nulla, velit perferendis sunt, placeat officia. Recusandae, aperiam.
+        </div>
+
+
+    </section>
+    <section id="proyectos">
+        Mis Proyectos
+    </section>
+    <section id="hobbies">
     Mis Hobbies
+    </section>
 </body>
 </html>
